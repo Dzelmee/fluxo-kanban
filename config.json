@@ -1,0 +1,38 @@
+{
+  "name": "FLUXO",
+  "subtitle": "Ideias em movimento.",
+  "plural": "registros",
+  "singular": "Registro",
+  "fields": [
+    {
+      "key": "tarefa",
+      "label": "Tarefa",
+      "type": "text"
+    },
+    {
+      "key": "responsavel",
+      "label": "Responsável",
+      "type": "text"
+    },
+    {
+      "key": "status",
+      "label": "Etapa",
+      "type": "select",
+      "options": [
+        "A fazer",
+        "Em andamento",
+        "Concluído"
+      ]
+    },
+    {
+      "key": "prioridade",
+      "label": "Prioridade",
+      "type": "select",
+      "options": [
+        "Baixa",
+        "Média",
+        "Alta"
+      ]
+    }
+  ]
+}
