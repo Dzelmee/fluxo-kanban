@@ -1,38 +1,33 @@
-# movo.
+# movo. — Quadro de tarefas
 
-O foco aqui foi visualizar o andamento das tarefas e permitir a movimentação dos registros entre etapas.
-
-É um projeto de portfólio voltado a **tarefas e etapas de trabalho**. Trabalhei tanto na apresentação visual quanto nas operações de cadastro e consulta dos dados.
+O movo. nasceu da ideia de enxergar o andamento do trabalho sem precisar abrir cada tarefa. O quadro mostra as etapas e permite movimentar os registros conforme o trabalho avança.
 
 ## O que implementei
 
-- Cadastro, edição e exclusão de registros, com validação no servidor.
-- Busca e formulários para trabalhar com os dados.
-- Indicadores calculados a partir dos registros existentes.
-- Interface responsiva, tema claro/escuro e animações com suporte a redução de movimento.
-- Movimentação de tarefas entre etapas do quadro.
+- Cadastro, edição, busca e exclusão de tarefas.
+- Movimentação dos registros entre etapas do quadro.
+- Validação no servidor e indicadores baseados nos dados existentes.
+- Interface responsiva, temas claro/escuro e animações que respeitam movimento reduzido.
 
-## Tecnologias
-
-HTML, CSS, JavaScript com ES Modules e Node.js usando o módulo HTTP nativo. Os dados são mantidos em um arquivo JSON local.
-
-## Executar localmente
+## Como executar
 
 ```bash
 npm test
 npm start
 ```
 
-A aplicação abre em `http://localhost:3000`. É possível alterar a porta pela variável `PORT`.
+O servidor inicia em `http://localhost:3000`. Para usar outra porta, configure `PORT`.
 
-## O que ainda falta para produção
+## Tecnologias e armazenamento
 
-Este é um projeto demonstrativo, sem autenticação, controle de acesso por usuário ou banco de dados de produção. Os dados são armazenados localmente em JSON; não há suporte garantido a múltiplas instâncias ou concorrência. As imagens externas dependem de conexão com a internet.
+Usei HTML, CSS e JavaScript com ES Modules no front-end. O servidor é feito em Node.js, usando o módulo HTTP nativo. Os registros ficam em um arquivo JSON local.
+
+## Limitações
+
+Esta é uma aplicação de demonstração, não um serviço pronto para produção. Ainda não há autenticação, permissões por usuário nem banco de dados de produção. O armazenamento em JSON também não foi pensado para várias instâncias simultâneas.
 
 ## Imagens
 
-Imagens utilizadas do Unsplash, conforme a [licença da plataforma](https://unsplash.com/license).
-
-Referências usadas neste projeto:
+Fotografias do [Unsplash](https://unsplash.com/license):
 - https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=85
-- https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1100&q=85.
+- https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1100&q=85
